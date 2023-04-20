@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="icon.webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@800&family=Kantumruy+Pro:wght@500&family=Montserrat+Alternates:wght@900&family=Noto+Sans+Limbu&family=Poppins:ital,wght@0,300;0,400;0,600;1,900&family=Raleway:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Ip locator</title>
+</head>
+
+<body>
+
+    <div class="navBar">
+        <!-- this is our nav bar inner section-->
+        <!--chip-->
+        <center>
+            <div class="innerDiv">
+                
+                    <img src="icon.webp" class="icon" alt="loading">
+                
+                <ul>
+                    
+                    <li>
+                        <a href="Dashboard.html">
+                            Features
+                        </a>
+
+
+                    </li>
+                    <li>
+                        <a href="WebAccelaration.html">
+                            Website accelaration
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="Network.html">
+                            Network
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="ImageProcessing.html">
+                            Image Processing
+                        </a>
+
+
+                    </li>
+                </ul>
+
+               <div class="btnsDiv">
+                <a href="SignIn.html">Login</a>
+                <button class="navBtns">Signup</button>
+
+                
+               </div>
+            
+                <i class="fa-solid fa-bars " id="burgerBtn"></i>
+              
+              
+            </div>
+        </center>
+
+        <!-- nav bar below header-->
+  
+        <center>
+       <b><h1>Features & Tools</h1></b> 
+        <p>Troubleshoot website, network, and CDN issues for fast resolutions.</p>
+    </center>
+
+    </div>
+    <!-- navbar overlay-->
+    <div class="sideBar">
+        <div class="sideBarDiv">
+            <img src="icon.webp" class="icon" alt="loading">
+
+            <i class="fa-sharp fa-solid fa-xmark fa-beat cancleBtn"></i>
+
+
+        </div>
+
+        <ul>
+            <li>
+                <a href="Dashboard.html"> Features</a>
+            </li>
+            <li>
+                <a href="WebAccelaration.html">Website accelaration</a>
+            </li>
+            <li>
+                <a href="Network.html">Network</a>
+            </li>
+            <li>
+                <a href="ImageProcessing.html"> Image Processing</a>
+            </li>
+            <span class="innerDiv">
+            <li>
+                <button class="navBtns btnLogin"  >Login</button>
+               
+
+               
+            </li>
+            <li>
+                <button class="navBtns">Signup</button>
+            </li>
+        </span>
+        </ul>
+
+    </div>
+
+
+    <!-- section one starts from here main section-->
+    <section class="section1">
+        <center>
+        <table>
+            <tr>
+                <td>
+                    <h1>Ip Location Finder</h1>
+                </td>
+               
+            </tr>
+
+            <tr>
+                 <td>
+                    <p>IP LOOKUP OR IP ADDRESS LOOKUP WITH DETAILED IP GEOLOCATION DATA</p>
+                <p>Test this Public IP address 39.60.77.65</p>
+                </td>
+            </tr>
+            <!-- search bar row-->
+            <tr>
+                <td class="inputPart">
+                    <label for="inputIP">IPV4 Public</label>
+                    <div >
+                   
+                    <input type="text" name="text" id="inputIP" placeholder="192.11.11.11">
+                    <button  id="navBtns">Find</button>
+                </div>
+
+
+                </td>
+
+            </tr>
+            <tr>
+                <td >
+                    <div class="apiDataDiv">
+                      <p>Fetched Data<p>
+                       <table>
+                       
+                        <tr class="dataList">
+                            <td >City:</td>
+                            <td id="city"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >Country:</td>
+                            <td id="country"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >CountryCode:</td>
+                            <td id="countryCode"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >ISP:</td>
+                            <td id="isp"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >Lat:</td>
+                            <td id="lat"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >Lon:</td>
+                            <td id="lon"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >Organization:</td>
+                            <td id="organization"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >Query:</td>
+                            <td id="query"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >region:</td>
+                            <td id="region"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >regionName:</td>
+                            <td id="regionName"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >Status:</td>
+                            <td id="status"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >Timezone:</td>
+                            <td id="timezone"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >Zip:</td>
+                            <td id="zip"></td>
+                        </tr>
+                        <tr class="dataList">
+                            <td >AS:</td>
+                            <td id="as"></td>
+                        </tr>
+                    
+                       </table>
+                   
+                
+                    </div>
+
+               
+                      
+                   
+                </td>
+
+            </tr>
+            <tr>
+                <td >
+                    <center>
+                    <iframe
+                    width="100%"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    id="mapIntegration"
+                    src="https://maps.google.com/maps?q=31.582045,74.329376&z=15&output=embed">
+                    </iframe>
+                </center>
+                </td>
+
+               
+
+            </tr>
+            <tr>
+                <td>
+                    <h1>IP Location Finder FAQ</h1>
+
+                    <h4>What is IP Geolocation?
+                    </h4>
+                    <p>IP geolocation is the mapping of an IP address to the geographic location of the internet from the connected device. By geographically mapping the IP address, it provides you with location information such as the country, state, city, zip code, latitude/longitude, ISP, area code, and other information.</p>
+               <h1>How does the IP lookup work?</h1>
+               <p>ARIN's WHOIS service gives contact and registration information for the IP address lookup and is freely available to access. When a company acquires a block of IP addresses, a request is submitted and then those IPs are assigned to the requested ISP.
+
+                The IP geolocation data gets updated automatically based on the databases of the regional Internet registry (RIR). Manual updates are not possible.</p>
+               
+                <h1>How accurate is IP Geolocation?</h1>
+                <p>There are many different IP location databases in which you can pull from. Most vendors claim a 98% or higher accuracy. IP mapping to specific cities can sometimes vary slightly based upon the location of the nearest ISP provider's network hub.
+
+                    Does it support IPv6 location lookups?
+                    Yes, IPv6 geoloaction is supported as well. Just enter a valid address above to perform the IPv6 lookup.</p>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    </section>
+
+    <section class="section2">
+        <center>
+        <h1>Get started for free</h1>
+        <p>Try KeyCDN with a free 14 day trial, no credit card required.</p>
+        <div>
+            <button class="navBtns" style="border:1px solid white">Get Started</button>
+            <button class=" btn">Pricing</button>
+        </div>
+    </center>
+
+    </section>
+
+    <footer >
+        <div class="footerEl footerEL2">
+ <center>
+    <span>
+            <img src="icon.webp" class="icon" alt="loading">
+           <p> &copy 2023 priority LLC made in pakistan</p>
+           <i class="fa-brands fa-twitter fa-bounce"></i>
+
+           <i class="fa-brands fa-github fa-beat"></i>
+           <i class="fa-brands fa-facebook fa-flip"></i>
+            <p>Terms Privacy GDPR</p>
+       
+        </center>
+        </div>
+    
+        <div class="footerEl">
+
+            <table>
+                <tr>
+                    <th> <h4> PRODUCT</h4></th>
+                    <th><h4>COMPANY</h4></th>
+                    <th><h4>SUPPORT</h4></th>
+
+                </tr>
+                <tr  > 
+                    <td>
+                       <ul>
+                        <li>Features</li>
+                        <li>Network</li>
+                        <li>Pricing</li>
+                        <li>Api</li>
+                        
+                       </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Contact</li>
+                            <li>Referrals</li>
+                            <li>Careers</li>
+                            
+                           </ul>
+                        </td>
+                       
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Knowledge </li>
+                            <li>Network </li>
+                            <li>OpenSource</li>
+                            <li>FAQ</li>
+                            <li>Tools</li>
+                            
+                           </ul>
+                        
+                       
+                    </td>
+                </tr>
+               
+               
+                
+           
+            </table>
+        </div>
+     
+
+
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="Dashboard.js"></script>
+<script src="https://kit.fontawesome.com/2932318f3b.js" crossorigin="anonymous"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
+
+
+</html>
